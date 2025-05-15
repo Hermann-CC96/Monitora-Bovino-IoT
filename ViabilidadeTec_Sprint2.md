@@ -1,6 +1,7 @@
 **História 2 – Relatório Completo sobre**
 Foi criado objetivo geral cujo foco é estabelecer diretriz para sprint 2:  
-Monitorar bovinos em pasto utilizando sensores IoT de temperatura, umidade e movimento, tanto no ambiente quanto nos animais, garantindo bem-estar, prevenção de doenças e melhoria no manejo. 
+Monitorar bovinos em pasto utilizando sensores IoT de temperatura, umidade e movimento, 
+tanto no ambiente quanto nos animais, garantindo bem-estar, prevenção de doenças e melhoria no manejo. 
 
 **Levantamento de Sensores Viáveis**
 Antes da divisão em tarefas especificas, foi feito um levantamento inicial com os seguintes critérios: 
@@ -73,3 +74,18 @@ A infraestrutura IoT está pronta para ser testada em protótipo com foco em:
 Monitoramento ambiental 
 Monitoramento de comportamento animal 
 Coleta e transmissão de dados para um servidor central 
+
+Referencias 
+
+1 - https://agris.fao.org/search/en/providers/122439/records/64747252425ec3c088f2a353 
+2 - https://www.makerhero.com/produto/sensor-de-umidade-e-temperatura-dht11/?srsltid=AfmBOop5ti_thrZ02JSh4TGa6Na9-XqZHtPUs3UxPLO8u2qdbU5jLhBB 
+3 - https://www.robocore.net/sensor-robo/acelerometro-e-giroscopio-mpu6050?srsltid=AfmBOopCUZKjfOwOHgHua2cdnzGps0vEyBoBsTHueBz-fGqluIJ2EZar 
+4 - https://www.alldatasheet.com/datasheet-pdf/view/224153/MELEXIS/MLX90614.html 
+5 - https://www.eletrogate.com/modulo-gps-neo-6m-com-antena?srsltid=AfmBOoqqI4xFoS7y4eX--9nXfxQzDKu5xq4YhqI1zFSLlQgiVoKJraaz 
+6 - https://s3.amazonaws.com/westgen/wp-content/uploads/2017/06/19140218/HT-Pro_16_A4_Eng_Nov15_low.pdf 
+7 - https://www.cowmanager.com/cow-management/ 
+8 - Sensor de temperatura e umidade DHT22 (AM2302) - Arduino e Cia 
+9 - DS18B20 - Sensor de temperatura inteligente com Arduino | Portal VDS 
+10 - DS18B20 pdf, DS18B20 Descrição, DS18B20 Folha de dados, DS18B20 view ::: ALLDATASHEET ::: 
+11 - Sensor BME280 para Pressão, Umidade e Temperatura - Blog UsinaInfo 
+12 - BME280 pdf, BME280 Descrição, BME280 Ficha técnica, BME280 view ::: ALLDATASHEET ::: 
