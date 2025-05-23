@@ -77,21 +77,25 @@ apropriado para monitoramento contínuo e individualizado.
 Sensor analógico e digital que mede o nível de umidade do solo, útil para avaliar as condições de
 pastagens e auxiliar no manejo de irrigação ou movimentação do rebanho. Fácil integração com
 microcontroladores e baixo custo.
+![image](https://github.com/user-attachments/assets/8424a5bd-7dfe-4718-829f-6998070fc17b)
 
 **Sensor Capacitivo de Umidade do Solo (v1.2)**
 Utiliza variação capacitiva para medir a umidade, sem contato direto com o solo, o que o torna mais
 resistente à corrosão. Apresenta maior durabilidade e é indicado para monitoramento contínuo em campo aberto.
+![image](https://github.com/user-attachments/assets/d38dd1dd-5c87-4324-b208-606ebeb1ad41)
 
 **SHT20 com Sonda Impermeável (Umidade e Temperatura do Solo)**
 Sensor digital de alta precisão, mede simultaneamente a umidade volumétrica e a temperatura do solo.
 A sonda selada é resistente à água, ideal para uso prolongado em ambientes externos. Comunicação via I2C,
 com excelente compatibilidade com o ESP32. Indicado para aplicações que exigem dados confiáveis para rodízio 
 de pastagem, monitoramento térmico do solo e mapeamento agroambiental.
+![image](https://github.com/user-attachments/assets/c24c7403-fb97-496a-9855-985a70479904)
 
 **NEO-6M GPS Module**
 Módulo GPS de baixo custo com boa sensibilidade e cobertura em áreas abertas, ideal para rastreamento
 de animais em campo. Permite identificar a localização geográfica com precisão razoável e pode ser
 utilizado em conjunto com sensores de movimento e temperatura.
+![image](https://github.com/user-attachments/assets/a443fb60-4957-4dd2-bda7-20443eb35dc9)
 
 **Resultados**
 Os sensores FC-28, sensor capacitivo de umidade, e SHT20 com sonda impermeável foram considerados adequados para 
@@ -102,7 +106,8 @@ sinal e compatibilidade com o ESP32, tornando-se uma solução viável para loca
 **Tarefa 2.4 – Verificação de Compatibilidade com Microcontroladores (ESP32)**
 **Microcontrolador escolhido**
 **ESP32**
-Microcontrolador com conectividade Wi-Fi e Bluetooth, ideal para projetos IoT. Possui múltiplas interfaces de 
+![image](https://github.com/user-attachments/assets/269b891c-b02c-43e8-80d2-a87f8e4e5dd6)
+Microcontrolador com conectividade Wi-Fi e Bluetooth ou LoRaWan/LoRa, ideal para projetos IoT. Possui múltiplas interfaces de 
 comunicação (I2C, SPI, UART), bom poder de processamento e ampla comunidade de suporte.
 Possui a comunicação via I2C, SPI e UART com os sensores:
 MLX90614
@@ -128,25 +133,27 @@ Uso de baterias Li-Ion (18650) e pequenos painéis solares.
 Sistema pode funcionar com autonomia de até 3–5 dias com bateria recarregável e painel solar auxiliar. 
 
 **Tarefa 2.6 – Sensores de Batimento Cardíaco**
-Sensores estudados: 
-Pulse Sensor (com contato): uso limitado pela dificuldade de posicionamento em animais. 
-MAX30100 / MAX30102: Oxímetro e frequência cardíaca por infravermelho. 
+**Sensores estudados**
+Pulse Sensor (com contato)
+Sensor óptico de batimento cardíaco baseado na variação do fluxo sanguíneo. Apesar de ser funcional em humanos, 
+apresenta limitações no uso com animais devido à dificuldade de posicionamento estável e necessidade de contato firme com a pele.
+![image](https://github.com/user-attachments/assets/74088f49-98bd-4ceb-9cd2-f71d727d6b08)
 
-Resultados: 
-MAX30102 viável com adaptação em brinco ou coleira com contato com pele fina (ex: orelha). 
+**MAX30100 / MAX30102**
+Sensores ópticos que combinam oximetria e monitoramento de frequência cardíaca por infravermelho. O modelo MAX30102,
+mais recente e preciso, mostrou-se mais promissor para uso em animais.
+![image](https://github.com/user-attachments/assets/7953fbae-de01-4ba2-8e4d-223774b5e961)
+![image](https://github.com/user-attachments/assets/dc350cc7-940a-41a7-b99a-9fe4ac0a7e1b)
 
- Conclusão Geral 
-Todos os sensores levantados podem ser conectados ao ESP32. 
-Sistema modular pode ser implementado com sensores no ambiente (solo, clima) e sensores no animal (coleira/brinco). 
-A infraestrutura IoT está pronta para ser testada em protótipo com foco em: 
-Monitoramento ambiental 
-Monitoramento de comportamento animal 
-Coleta e transmissão de dados para um servidor central
+**Resultados**
+O MAX30102 foi considerado viável para uso com adaptações específicas, como em brincos eletrônicos ou coleiras com contato direto 
+com áreas de pele fina, como a orelha dos bovinos. Essa aplicação abre caminho para o monitoramento contínuo de sinais vitais em
+tempo real, com coleta e transmissão via ESP32.
 
 [Estudo de Viabilidade técnica.docx](https://github.com/user-attachments/files/20394354/Estudo.de.Viabilidade.tecnica.docx)
 
 
-Referencias 
+**Referencias**
 
 1 - https://agris.fao.org/search/en/providers/122439/records/64747252425ec3c088f2a353 
 2 - https://www.makerhero.com/produto/sensor-de-umidade-e-temperatura-dht11/?srsltid=AfmBOop5ti_thrZ02JSh4TGa6Na9-XqZHtPUs3UxPLO8u2qdbU5jLhBB 
