@@ -1,4 +1,4 @@
-**História 2 – Relatório Completo sobre**
+**História 2 – Relatório Completo sobre Viabilidade Tacnica - Levantemento dos Lensores**
 Foi criado objetivo geral cujo foco é estabelecer diretriz para sprint 2:  
 Monitorar bovinos em pasto utilizando sensores IoT de temperatura, umidade e movimento, 
 tanto no ambiente quanto nos animais, garantindo bem-estar, prevenção de doenças e melhoria no manejo. 
